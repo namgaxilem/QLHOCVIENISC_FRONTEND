@@ -16,6 +16,9 @@ rootApp.config(function($routeProvider) {
       templateUrl: "/app/components/contact/contactView.html"
     })
     .when("/student/", {
+      resolve: {
+        "check":
+      },
       templateUrl: "app/components/student_scope/infomation_page/infomationView.html"
     })
     .when("/student/infomation", {
