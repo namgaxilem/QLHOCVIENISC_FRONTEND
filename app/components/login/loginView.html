@@ -1,4 +1,4 @@
-<section id="login-form">
+<section id="login-form" ng-controller="loginController">
     <div class="container">
         <div class="login-page">
             <div class="form">
@@ -23,9 +23,9 @@
                             </label>
                         </div>
                     </div>
-                    <input type="text" placeholder="Tên đăng nhập" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <button>Đăng nhập</button>
+                    <input type="text" ng-model="username" placeholder="Tên đăng nhập" />
+                    <input type="password" ng-model="password" placeholder="Mật khẩu" />
+                    <button ng-click="submit()">Đăng nhập</button>
                     <input type="checkbox" id="remember-password">
                     <label for="remember-password">
                         Ghi nhớ mật khẩu

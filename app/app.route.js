@@ -15,6 +15,21 @@ rootApp.config(function($routeProvider) {
     .when("/contact", {
       templateUrl: "/app/components/contact/contactView.html"
     })
+    .when("/student/", {
+      templateUrl: "app/components/student_scope/infomation_page/infomationView.html"
+    })
+    .when("/student/infomation", {
+      templateUrl: "app/components/student_scope/infomation_page/infomationView.html"
+    })
+    .when("/student/contact", {
+      templateUrl: "app/components/student_scope/contact_page/contactView.html"
+    })
+    .when("/student/notification", {
+      templateUrl: "app/components/student_scope/contact_page/notificationView.html"
+    })
+    .when("/student/schedule", {
+      templateUrl: "app/components/student_scope/schedule_page/scheduleView.html"
+    })
     .otherwise({
       template: "<div class='container'><hr><h3>Không tìm thấy trang này</h3><hr></div></br>"
     });
