@@ -1,7 +1,7 @@
 rootApp.config(function($routeProvider) {
   $routeProvider
     .when("/", {
-      templateUrl: "/index.html"
+      templateUrl: "/app/components/news/newsView.html"
     })
     .when("/login", {
       templateUrl: "/app/components/login/loginView.html"
@@ -23,19 +23,19 @@ rootApp.config(function($routeProvider) {
           }
         }
       },
-      templateUrl: "app/components/scope_student/infomation_page/infomationView.html"
+      templateUrl: "app/components/scope_student/page_infomation/infomationView.html"
+    })
+    .when("/student/notification", {
+      templateUrl: "app/components/scope_student/page_notification/notificationView.html"
+    })
+    .when("/student/schedule", {
+      templateUrl: "app/components/scope_student/page_schedule/scheduleView.html"
+    })
+    .when("/student/contact", {
+      templateUrl: "app/components/scope_student/page_contact/contactView.html"
     })
     // .when("/student/infomation", {
     //   templateUrl: "app/components/scope_student/infomation_page/infomationView.html"
-    // })
-    // .when("/student/contact", {
-    //   templateUrl: "app/components/scope_student/contact_page/contactView.html"
-    // })
-    // .when("/student/notification", {
-    //   templateUrl: "app/components/scope_student/contact_page/notificationView.html"
-    // })
-    // .when("/student/schedule", {
-    //   templateUrl: "app/components/scope_student/schedule_page/scheduleView.html"
     // })
     .otherwise({
       template: "<div class='container'><hr><h3>Không tìm thấy trang này</h3><hr></div></br>"

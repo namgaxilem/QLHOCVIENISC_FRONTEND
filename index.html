@@ -11,6 +11,18 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
 
+</head>
+
+<body>
+
+  <div ng-include="'/app/shared/header/headerView.html'"> </div>
+
+  <div ng-include="'/app/shared/breadcrumb/breadcrumbView.html'"> </div>
+
+  <div ng-view> </div>
+
+  <div ng-include="'/app/shared/footer/footerView.html'"> </div>
+
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Popper JS -->
@@ -27,17 +39,6 @@
   <script src="app/shared/header/headerController.js"></script>
   <script src="app/shared/breadcrumb/breadcrumbController.js"></script>
   <script src="app/components/login/loginController.js"></script>
-</head>
-
-<body>
-
-  <div ng-include="'/app/shared/header/headerView.html'"> </div>
-
-  <div ng-include="'/app/shared/breadcrumb/breadcrumbView.html'"> </div>
-
-  <div ng-view> </div>
-
-  <div ng-include="'/app/shared/footer/footerView.html'"> </div>
 
 </body>
 

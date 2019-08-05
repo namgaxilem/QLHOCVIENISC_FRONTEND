@@ -12,15 +12,15 @@
          linkText: "Trang cá nhân"
        },
        {
-         link: "notification",
+         link: "student/notification",
          linkText: "Thông báo"
        },
        {
-         link: "schedule",
+         link: "student/schedule",
          linkText: "Thời khóa biểu"
        },
        {
-         link: "contact",
+         link: "student/contact",
          linkText: "Gửi thư"
        }
      ];
