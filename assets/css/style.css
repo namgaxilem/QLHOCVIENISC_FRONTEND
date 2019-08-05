@@ -30,6 +30,7 @@ body {
 #main-header .login-link {
   color: rgba(0, 0, 0, .5);
   float: right;
+  padding: 0 5px;
 }
 
 #main-header .login-link:hover {

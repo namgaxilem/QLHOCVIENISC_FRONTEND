@@ -6,7 +6,13 @@
                 <li><i class="fa fa-envelope"></i> 0943.778380 - 0908.232700 - 0903.767188</li>
             </ul>
             <div class="col-sm-6">
-                <a href="#!login" class="login-link">{{ dangnhap }}</a>
+                <div ng-if="!loggedIn">
+                    <a href="#!login" class="login-link">{{ loggedIn }}</a>
+                </div>
+                <div ng-if="loggedIn">
+                    <a href="#!loggout" class="login-link">Đăng xuất</a>
+                    <a href="#!{{ userType }}" class="login-link" style="border-right: 1px solid grey">Nguyễn Văn A</a>
+                </div>
             </div>
         </div>
     </div>
@@ -22,7 +28,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto" >
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item" ng-repeat="x in list">
                     <a class="nav-link" href="#!{{ x.link }}">{{ x.linkText }}</a>
                 </li>
