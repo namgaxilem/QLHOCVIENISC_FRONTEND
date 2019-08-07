@@ -61,6 +61,7 @@
      }
    });
 
+   //init
    if ($scope.loggedIn == true) {
      $scope.logLink = "Đăng xuất";
      $scope.userName = sessionStorage.userName;
@@ -89,15 +90,15 @@
      ];
    } else if ($scope.userType == "teacher") {
      $scope.list = [{
-         link: "teacher",
+         link: "teacher/",
          linkText: "Trang cá nhân"
        },
        {
-         link: "classes",
+         link: "teacher/",
          linkText: "Lớp học"
        },
        {
-         link: "schedule",
+         link: "teacher/",
          linkText: "Thời khóa biểu"
        },
      ];
