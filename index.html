@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="rootApp">
+<html ng-app="rootApp" ng-controller="rootappController">
 
 <head>
   <title>ISC-QuangTrung | Trang chủ</title>
@@ -15,7 +15,7 @@
 
 <body>
 
-  <div ng-include="'/app/shared/header/headerView.html'"> </div>
+  <div header-directive> </div>
 
   <div ng-include="'/app/shared/breadcrumb/breadcrumbView.html'"> </div>
 
@@ -37,8 +37,11 @@
   <script src="app/app.module.js"></script>
   <script src="app/app.route.js"></script>
   <script src="app/shared/header/headerController.js"></script>
+  <script src="app/shared/header/headerService.js"></script>
+  <script src="app/shared/header/headerDirective.js"></script>
   <script src="app/shared/breadcrumb/breadcrumbController.js"></script>
   <script src="app/components/login/loginController.js"></script>
+  <script src="app/components/login/loginService.js"></script>
 
 </body>
 

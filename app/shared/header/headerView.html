@@ -7,11 +7,11 @@
             </ul>
             <div class="col-sm-6">
                 <div ng-if="!loggedIn">
-                    <a href="#!login" class="login-link">{{ loggedIn }}</a>
+                    <a href="#!login" class="login-link">{{ logLink }}</a>
                 </div>
                 <div ng-if="loggedIn">
-                    <a href="#!loggout" class="login-link">Đăng xuất</a>
-                    <a href="#!{{ userType }}" class="login-link" style="border-right: 1px solid grey">Nguyễn Văn A</a>
+                    <a href="#!" class="login-link">{{ logLink }}</a>
+                    <a href="#!{{ userType }}" class="login-link" style="border-right: 1px solid grey">{{ userName }}</a>
                 </div>
             </div>
         </div>

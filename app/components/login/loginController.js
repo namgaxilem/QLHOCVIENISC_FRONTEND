@@ -1,14 +1,28 @@
-rootApp.controller("loginController", function($rootScope, $scope, $location) {
-  $scope.submit = function() {
+rootApp.controller("loginController", function($rootScope, $scope, $location, headerService) {
+
+  $scope.login = function() {
     if ($scope.username == "admin" && $scope.password == "admin") {
-      $rootScope.loggedIn = true;
+
+      sessionStorage.loggedIn = true;
+      headerService.setLoggedIn(sessionStorage.loggedIn);
+
+      //create html5 storage
+      sessionStorage.setItem("loggedIn", "true");
+      sessionStorage.setItem("userName", "Nguyễn Đức Nam");
+      sessionStorage.setItem("userType", "student");
+
+      //emit to rootappController
+      $scope.$emit('logstateChange', {
+        loggedIn: true
+      });
+
+      //redirect to student
       $location.path("/student");
-    }
-    else if ($scope.username == "" || $scope.password == ""){
-      alert("Hãy điền đầy đủ thông tin");
-    }
-    else {
+    } else {
+      console.log('dang nhap that bai');
+      sessionStorage.setItem("loggedIn", "false");
       alert("Thông tin đăng nhập chưa đúng");
     }
   };
+
 });
