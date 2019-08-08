@@ -1,5 +1,6 @@
 rootApp.controller("loginController", function($rootScope, $scope, $location, headerService) {
-
+  $rootScope.title = "Đăng nhập";
+  
   $scope.login = function() {
     if ($scope.username == "admin" && $scope.password == "admin") {
 

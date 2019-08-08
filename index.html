@@ -2,15 +2,15 @@
 <html ng-app="rootApp" ng-controller="rootappController">
 
 <head>
-  <title>ISC-QuangTrung | Trang chủ</title>
+  <title>ISC-QuangTrung | {{ title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/assets/css/style.css">
-
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
@@ -42,6 +42,13 @@
   <script src="app/shared/breadcrumb/breadcrumbController.js"></script>
   <script src="app/components/login/loginController.js"></script>
   <script src="app/components/login/loginService.js"></script>
+  <script src="app/components/home/homeController.js"></script>
+  <script src="app/components/about/aboutController.js"></script>
+  <script src="app/components/contact/contactController.js"></script>
+  <script src="app/components/news/newsController.js"></script>
+
+  <!-- Boostrap datepicker -->
+  <script src="assets\bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
 
 </body>
 

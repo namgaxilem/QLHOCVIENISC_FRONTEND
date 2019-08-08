@@ -1,19 +1,24 @@
 rootApp.config(function($routeProvider) {
   $routeProvider
     .when("/", {
-      templateUrl: "/app/components/home/homeView.html"
+      templateUrl: "/app/components/home/homeView.html",
+      controller: "homeController"
     })
     .when("/login", {
-      templateUrl: "/app/components/login/loginView.html"
+      templateUrl: "/app/components/login/loginView.html",
+      controller: "loginController"
     })
     .when("/about", {
-      templateUrl: "/app/components/about/aboutView.html"
+      templateUrl: "/app/components/about/aboutView.html",
+      controller: "aboutController"
     })
     .when("/news", {
-      templateUrl: "/app/components/news/newsView.html"
+      templateUrl: "/app/components/news/newsView.html",
+      controller: "newsController"
     })
     .when("/contact", {
-      templateUrl: "/app/components/contact/contactView.html"
+      templateUrl: "/app/components/contact/contactView.html",
+      controller: "contactController"
     })
     .when("/student/", {
       resolve: {

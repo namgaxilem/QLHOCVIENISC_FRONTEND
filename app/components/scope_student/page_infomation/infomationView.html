@@ -20,6 +20,10 @@
                         <td>086812741</td>
                     </tr>
                     <tr>
+                        <td>Email</td>
+                        <td>namgaxilem@gmail.com</td>
+                    </tr>
+                    <tr>
                         <td>Ngày sinh</td>
                         <td>11-08-1997</td>
                     </tr>
@@ -62,29 +66,86 @@
             </div>
         </div>
     </div>
-</section>
 
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Cập nhật thông tin cá nhân</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table class="table table-hover">
+                <tr>
+                    <td>Mã số sinh viên</td>
+                    <td>1521002563</td>
+                </tr>
+                <tr>
+                    <td>Họ tên</td>
+                    <td>Nguyễn Đức Nam</td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại</td>
+                    <td>  <input type="text" class="form-control" placeholder="086812741" /> </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại</td>
+                    <td>  <input type="text" class="form-control" placeholder="namgaxilem@gmail.com" /> </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="text" class="form-control datepicker"></td>
+                </tr>
+                <tr>
+                    <td>Nơi sinh</td>
+                    <td> <input type="text" class="form-control" placeholder="TPCHM" /></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td> <input type="text" class="form-control" placeholder="Nam "/></td>
+                </tr>
+                <tr>
+                    <td>Dân tộc</td>
+                    <td> <input type="text" class="form-control" placeholder="Kinh"/></td>
+                </tr>
+                <tr>
+                    <td>Số CMND/CCCD</td>
+                    <td> <input type="text" class="form-control" placeholder="025738735" /></td>
+                </tr>
+                <tr>
+                    <td>Nơi sống hiện tại</td>
+                    <td> <input type="text" class="form-control" placeholder="1/49 Trục phường 13 quận Bình Thạnh" /></td>
+                </tr>
+                <tr>
+                    <td>Tôn giáo</td>
+                    <td> <input type="text" class="form-control" placeholder="Không" /></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Xác nhận</button>
+                    </td>
+                </tr>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
     </div>
-  </div>
-</div>
+
+    <script>
+      $('input.datepicker').datepicker({
+      });
+    </script>
+</section>
