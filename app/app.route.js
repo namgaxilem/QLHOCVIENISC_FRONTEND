@@ -56,10 +56,14 @@ rootApp.config(function($routeProvider) {
     })
     //admin scope
     .when("/admin", {
-      templateUrl: "app/components/scope_admin/page_trangchu/trangchuView.html"
+      controller: "adminController"
     })
     //otherwise
     .otherwise({
       template: "<div class='container'><hr><h3>Không tìm thấy trang này</h3><hr></div></br>"
     });
+});
+
+rootApp.controller("adminController", function ($scope) {
+  console.log("ahihi");
 });

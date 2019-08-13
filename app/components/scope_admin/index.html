@@ -1,8 +1,7 @@
-﻿<!DOCTYPE html>
-<html ng-app="rootApp" ng-controller="rootappController">
+<!DOCTYPE html>
+<html ng-app="adminApp" ng-controller="adminappController">
 
 <head>
-
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +32,6 @@
 
     <!-- Ckeditor JS-->
     <script type="text/javascript" src="assets/lib/ckeditor/ckeditor.js"> </script>
-
 </head>
 
 <body class="animsition">
@@ -44,7 +42,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="images/icon/logo.png" alt="Admin" />
+                            <img src="assets/lib/images/icon/logo.png" alt="Admin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -137,7 +135,7 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="images/icon/logo.png" alt="Admin" />
+                    <img src="assets/lib/images/icon/logo.png" alt="Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -237,7 +235,7 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/avatar-08.jpg" alt="Quý Nguyễn" />
+                                            <img src="assets/lib/images/icon/avatar-08.jpg" alt="Quý Nguyễn" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">Quý Nguyễn</a>
@@ -246,7 +244,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="images/icon/avatar-08.jpg" alt="Quý Nguyễn" />
+                                                        <img src="assets/lib/images/icon/avatar-08.jpg" alt="Quý Nguyễn" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
@@ -306,28 +304,28 @@
         </div>
     </div>
     <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/lib/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="assets/lib/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="assets/lib/vendor/bootstrap-4.1/bootstrap.min.js"></script>
     <!-- Vendor JS       -->
-    <script src="vendor/slick/slick.min.js">
-    </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js">
-    </script>
+    <script src="assets/lib/vendor/slick/slick.min.js"></script>
+    <script src="assets/lib/vendor/wow/wow.min.js"></script>
+    <script src="assets/lib/vendor/animsition/animsition.min.js"></script>
+    <script src="assets/lib/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="assets/lib/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="assets/lib/vendor/counter-up/jquery.counterup.min.js"></script>
+    <script src="assets/lib/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="assets/lib/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/lib/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="assets/lib/vendor/select2/select2.min.js"></script>
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="assets/lib/js/main.js"></script>
 
+    <!-- route and admin module angularjs -->
+    <script src="app/components/scope_admin/admin.module.js"> </script>
+    <script src="app/components/scope_admin/admin.route.js"> </script>
 </body>
+
 </html>
 <!-- end document-->
