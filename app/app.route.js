@@ -1,5 +1,6 @@
 rootApp.config(function($routeProvider) {
   $routeProvider
+    //
     .when("/", {
       templateUrl: "/app/components/home/homeView.html",
       controller: "homeController"
@@ -20,6 +21,7 @@ rootApp.config(function($routeProvider) {
       templateUrl: "/app/components/contact/contactView.html",
       controller: "contactController"
     })
+    //student scope
     .when("/student/", {
       resolve: {
         "check": function($location, $rootScope) {
@@ -30,6 +32,9 @@ rootApp.config(function($routeProvider) {
       },
       templateUrl: "app/components/scope_student/page_infomation/infomationView.html"
     })
+    .when("/student/infomation", {
+      templateUrl: "app/components/scope_student/infomation_page/infomationView.html"
+    })
     .when("/student/notification", {
       templateUrl: "app/components/scope_student/page_notification/notificationView.html"
     })
@@ -39,9 +44,21 @@ rootApp.config(function($routeProvider) {
     .when("/student/contact", {
       templateUrl: "app/components/scope_student/page_contact/contactView.html"
     })
-    // .when("/student/infomation", {
-    //   templateUrl: "app/components/scope_student/infomation_page/infomationView.html"
-    // })
+    //teacher scope
+    .when("/teacher/infomation", {
+      templateUrl: "app/components/scope_teacher/infomation_page/infomationView.html"
+    })
+    .when("/teacher/inputscore", {
+      templateUrl: "app/components/scope_teacher/page_input_score/inputscoreView.html"
+    })
+    .when("/teacher/schedule", {
+      templateUrl: "app/components/scope_teacher/page_schedule/scheduleView.html"
+    })
+    //admin scope
+    .when("/admin", {
+      templateUrl: "app/components/scope_admin/page_trangchu/trangchuView.html"
+    })
+    //otherwise
     .otherwise({
       template: "<div class='container'><hr><h3>Không tìm thấy trang này</h3><hr></div></br>"
     });

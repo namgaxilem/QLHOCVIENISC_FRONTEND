@@ -34,12 +34,12 @@
            linkText: "Trang cá nhân"
          },
          {
-           link: "classes",
-           linkText: "Lớp học"
+           link: "teacher/schedule",
+           linkText: "Thời khóa biểu"
          },
          {
-           link: "schedule",
-           linkText: "Thời khóa biểu"
+           link: "teacher/inputscore",
+           linkText: "Nhập điểm"
          },
        ];
      } else if ($scope.userType == "admin") {
