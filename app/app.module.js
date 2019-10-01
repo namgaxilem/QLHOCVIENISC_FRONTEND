@@ -1,4 +1,4 @@
-var rootApp = angular.module("rootApp", ["ngRoute"]);
+var rootApp = angular.module("rootApp", ["ngRoute", "ui.router"]);
 rootApp.run(function($rootScope) {
     // $rootScope.loggedIn = true;
     // $rootScope.userType = 'student';

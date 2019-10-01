@@ -2,7 +2,6 @@
 <html ng-app="rootApp" ng-controller="rootappController">
 
 <head>
-
   <title>ISC-QuangTrung | {{ title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +16,7 @@
 
 <body>
 
-  <div header-directive> </div>
-
-  <div ng-include="'/app/shared/breadcrumb/breadcrumbView.html'"> </div>
-
   <div ng-view> </div>
-
-  <div ng-include="'/app/shared/footer/footerView.html'"> </div>
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -46,7 +39,6 @@
   <script src="app/shared/breadcrumb/breadcrumbController.js"></script>
 
   <script src="app/components/login/loginController.js"></script>
-  <script src="app/components/login/loginService.js"></script>
   <script src="app/components/home/homeController.js"></script>
   <script src="app/components/about/aboutController.js"></script>
   <script src="app/components/contact/contactController.js"></script>
