@@ -108,6 +108,6 @@ rootApp.config(['$stateProvider', '$urlRouterProvider',
         controller: 'loginController'
       });
 
-    $urlRouterProvider.otherwise('/about');
+    $urlRouterProvider.otherwise('/login');
   }
 ]);
