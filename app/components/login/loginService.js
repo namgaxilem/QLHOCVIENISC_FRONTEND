@@ -1,3 +1,0 @@
-rootApp.service("loginService",function() {
-
-});
